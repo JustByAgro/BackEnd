@@ -14,6 +14,7 @@ export const usuarios = database.define('usuarios',{
     telefone: DataTypes.STRING,
     senha: DataTypes.STRING,
 
-
 });
+
+
     
