@@ -1,8 +1,8 @@
-import { database } from '../database/db.ts';
 import { Sequelize, DataTypes } from 'sequelize';
+import { database } from '../database/db.ts';
 
 export const produtos = database.define('produtos',{
-    id:{
+    id: {
         type:DataTypes.INTEGER,
         autoIncrement:true,
         allowNull: false,
@@ -12,5 +12,4 @@ export const produtos = database.define('produtos',{
     desc: DataTypes.STRING(1000),
     preco: DataTypes.FLOAT,
     
-    
-})
+});
