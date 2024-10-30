@@ -10,9 +10,10 @@ export const usuarios = database.define('usuarios',{
         autoIncrement: true,
         primaryKey:true
     },
-    nome: DataTypes.STRING,
-    telefone: DataTypes.STRING,
-    senha: DataTypes.STRING,
+    nome: {type:DataTypes.STRING, allowNull:false},
+    telefone: {type:DataTypes.STRING, allowNull:false},
+    senha: {type:DataTypes.STRING, allowNull:false},
+    cidade: {type:DataTypes.STRING, allowNull: false}
 
 });
 

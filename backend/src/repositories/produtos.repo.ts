@@ -18,7 +18,6 @@ export class produtoRepo{
     //PUT
     static async update(id,body){
         const produto = await produtos.findByPk(id);
-        
         if (produto){
             produto.set(body);
             produto.save;
